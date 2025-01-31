@@ -145,7 +145,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun load() {
         dataProcess.loadModel() // onnx 모델 불러오기
-        dataProcess.loadLabel() // coco txt 파일 불러오기
+        dataProcess.loadLabel() // txt 파일 불러오기
 
         ortEnvironment = OrtEnvironment.getEnvironment()
         session = ortEnvironment.createSession(

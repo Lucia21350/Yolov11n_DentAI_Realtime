@@ -120,7 +120,7 @@ class DataProcess(val context: Context) {
             var detectionClass: Int = -1
             var maxScore = 0f
             val classArray = FloatArray(classes.size)
-            // label 만 따로 빼서 1차원 배열을 만든다.(0~3은 좌표값임)
+            // label 만 따로 빼서 1차원 배열을 만든다.(0~3은 좌표값)
             System.arraycopy(output[i], 4, classArray, 0, classes.size)
             // label 중에서 가장 큰 값을 선정한다.
             for (j in classes.indices) {
@@ -130,7 +130,7 @@ class DataProcess(val context: Context) {
                 }
             }
 
-            //만약 80개의 coco dataset 중 가장 큰 확률값이 특정값을 (현재는 45% 확률) 넘어서면 해당 값을 저장한다.
+            //dataset 중 가장 큰 확률값이 특정값을 (현재는 45% 확률) 넘어서면 해당 값을 저장한다.
             if (maxScore > confidenceThreshold) {
                 val xPos = output[i][0]
                 val yPos = output[i][1]
@@ -220,3 +220,5 @@ class DataProcess(val context: Context) {
         return right - left
     }
 }
+
+// code: https://velog.io/@aloe/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-YOLO-v8-4

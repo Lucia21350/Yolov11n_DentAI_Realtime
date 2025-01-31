@@ -70,15 +70,7 @@ class RectView(context: Context, attributeSet: AttributeSet) : View(context, att
 
         //임의로 지정한 색상
         paint.color = when (classIndex) {
-            0, 45, 18, 19, 22, 30, 42, 43, 44, 61, 71, 72 -> Color.WHITE
-            1, 3, 14, 25, 37, 38, 79 -> Color.BLUE
-            2, 9, 10, 11, 32, 47, 49, 51, 52 -> Color.RED
-            5, 23, 46, 48 -> Color.YELLOW
-            6, 13, 34, 35, 36, 54, 59, 60, 73, 77, 78 -> Color.GRAY
-            7, 24, 26, 27, 28, 62, 64, 65, 66, 67, 68, 69, 74, 75 -> Color.BLACK
-            12, 29, 33, 39, 41, 58, 50 -> Color.GREEN
-            15, 16, 17, 20, 21, 31, 40, 55, 57, 63 -> Color.DKGRAY
-            70, 76 -> Color.LTGRAY
+            0 -> Color.WHITE
             else -> Color.DKGRAY
         }
         return paint
