@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.yolov8'
+    namespace 'com.example.yolov11'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.yolov8"
+        applicationId "com.example.yolov11"
         minSdk 23
         targetSdk 33
         versionCode 1

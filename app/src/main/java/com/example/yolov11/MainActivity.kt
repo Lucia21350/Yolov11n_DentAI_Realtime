@@ -1,4 +1,4 @@
-package com.example.yolov8
+package com.example.yolov11
 
 import ai.onnxruntime.OnnxTensor
 import ai.onnxruntime.OrtEnvironment

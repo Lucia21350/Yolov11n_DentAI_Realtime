@@ -1,4 +1,4 @@
-package com.example.yolov8
+package com.example.yolov11
 
 import android.content.Context
 import android.graphics.Bitmap
